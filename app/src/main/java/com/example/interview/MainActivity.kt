@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         adapter = NameAdapter(people) { count -> updateCount(count) }
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = adapter
-        binding.recyclerView.itemAnimator = null   // avoid flicker during filtering
+        binding.recyclerView.itemAnimator = null
     }
 
     private fun setupSearch() {

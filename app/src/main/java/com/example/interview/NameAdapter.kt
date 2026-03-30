@@ -14,7 +14,6 @@ class NameAdapter(
     private val onCountChanged: (Int) -> Unit
 ) : RecyclerView.Adapter<NameAdapter.NameViewHolder>(), Filterable {
 
-    /** Colors to cycle through for avatars */
     private val avatarColors = intArrayOf(
         R.color.avatar_0, R.color.avatar_1, R.color.avatar_2, R.color.avatar_3,
         R.color.avatar_4, R.color.avatar_5, R.color.avatar_6, R.color.avatar_7
@@ -41,12 +40,10 @@ class NameAdapter(
             binding.tvSubtitle.text = person.subtitle
             binding.tvInitial.text = person.name.firstOrNull()?.uppercaseChar()?.toString() ?: "?"
 
-            // Cycle through avatar color palette
             val colorRes = avatarColors[position % avatarColors.size]
             val bgDrawable = binding.avatarContainer.background.mutate() as android.graphics.drawable.GradientDrawable
             bgDrawable.setColor(binding.root.context.getColor(colorRes))
 
-            // Ripple effect on click
             binding.root.setOnClickListener {
                 it.animate().scaleX(0.97f).scaleY(0.97f).setDuration(80)
                     .withEndAction { it.animate().scaleX(1f).scaleY(1f).setDuration(80).start() }
