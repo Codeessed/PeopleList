@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">People Directory</string>
+    <string name="subtitle">Search and browse contacts</string>
+    <string name="search_hint">Search by name…</string>
+    <string name="no_results">No results found</string>
+    <string name="no_results_hint">Try a different name or check your spelling</string>
+    <string name="members_count">%1$d member(s)</string>
+</resources>

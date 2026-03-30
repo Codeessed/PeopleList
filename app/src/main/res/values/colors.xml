@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#5C6BC0</color>
+    <color name="primary_dark">#3949AB</color>
+    <color name="primary_light">#E8EAF6</color>
+    <color name="background">#F4F5FA</color>
+    <color name="on_surface">#1A1D2E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <!-- Avatar palette — cycles through for variety -->
+    <color name="avatar_0">#5C6BC0</color>
+    <color name="avatar_1">#42A5F5</color>
+    <color name="avatar_2">#26A69A</color>
+    <color name="avatar_3">#FFA726</color>
+    <color name="avatar_4">#EC407A</color>
+    <color name="avatar_5">#7E57C2</color>
+    <color name="avatar_6">#26C6DA</color>
+    <color name="avatar_7">#66BB6A</color>
+</resources>
